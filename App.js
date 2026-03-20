@@ -8,11 +8,11 @@ export default function App() {
   
   const adicionarFilme = () => {
     if (novoFilme.trim() === "") return;
-    const jogoObjeto = {
+    const filmeObjeto = {
       id: String(Date.now()),
       texto: novoFilme
     }
-    setListaFilmes([...listaFilmes, jogoObjeto]);
+    setListaFilmes([...listaFilmes, filmeObjeto]);
     setNovoFilme("");
   }
 
