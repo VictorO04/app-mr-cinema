@@ -24,7 +24,7 @@ export default function FilmeCard({ filme, onRemover }) {
   return (
     <View style={styles.card}>
       <View style={styles.poster}>
-        <Image source={filme.imagem} style={styles.posterImg} />
+        <Image source={{ uri: filme.imagem }} style={styles.posterImg} />
       </View>
 
       <View style={styles.info}>
